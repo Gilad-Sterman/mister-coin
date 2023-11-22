@@ -1,0 +1,29 @@
+.contact-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: .5rem;
+
+    h4 {
+        margin: 0;
+        margin-inline-start: .5rem;
+    }
+
+    .contact-info {
+        // width: 300px;
+        text-align: end;
+        margin-inline-end: 1rem;
+    }
+
+    p {
+        margin: 0;
+        color: rgb(204, 202, 202);
+        font-size: smaller;
+    }
+
+    &:hover {
+        background-color: rgba(226, 226, 226, 0.315);
+    }
+}

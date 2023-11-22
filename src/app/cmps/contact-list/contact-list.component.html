@@ -1,0 +1,13 @@
+<section class="contact-list">
+    <contact-filter *ngIf="!selectedContact"></contact-filter>
+    <ul *ngIf="!selectedContact">
+        <li *ngFor="let contact of contacts" (click)="onSetSelectedContact(contact)">
+            <contact-preview [contact]="contact"></contact-preview>
+        </li>
+    </ul>
+    <button *ngIf="selectedContact" (click)="onSetSelectedContact(null)">
+       <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/back_gtwwvx.png" alt="">
+        Back
+    </button>
+    <contact-details-page *ngIf="selectedContact" [contact]="selectedContact"></contact-details-page>
+</section>

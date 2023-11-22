@@ -1,0 +1,23 @@
+.contact-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem;
+
+    input {
+        color: rgb(64, 217, 217);
+        background-color: rgb(35, 123, 94);
+        padding: .5rem;
+        padding-inline-start: 1rem;
+        border: none;
+        border-radius: 1rem;
+        outline: 2px solid rgb(206, 206, 206);
+
+        &:focus-visible {
+            outline: 2px solid rgb(255, 255, 255);
+        }
+    }
+
+    ::placeholder {
+        color: rgb(64, 217, 217);
+    }
+}
