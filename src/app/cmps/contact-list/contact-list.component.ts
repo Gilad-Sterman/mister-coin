@@ -9,10 +9,10 @@ import { Contact } from '../../services/contact.model';
 export class ContactListComponent {
   @Input() contacts!: Contact[] | null
 
-  selectedContact: Contact | null = null
+  // selectedContact: Contact | null = null
 
-  onSetSelectedContact(contact: Contact | null) {
-    this.selectedContact = contact
-  }
+  // onSetSelectedContact(contact: Contact | null) {
+  //   this.selectedContact = contact
+  // }
 
 }

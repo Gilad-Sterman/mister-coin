@@ -1,0 +1,12 @@
+.app-header {
+    background-color: rgb(94, 236, 236);
+    position: sticky;
+    // width: 100vw;
+    top: 0;
+    padding: 1rem;
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+}

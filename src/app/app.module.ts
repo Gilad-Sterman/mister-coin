@@ -11,6 +11,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ContactDetailsPageComponent } from './pages/contact-details-page/contact-details-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AppHeaderComponent } from './cmps/app-header/app-header.component';
+import { ContactEditComponent } from './cmps/contact-edit/contact-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     ContactPreviewComponent,
     ContactPageComponent,
     HomePageComponent,
-    ContactDetailsPageComponent
+    ContactDetailsPageComponent,
+    AppHeaderComponent,
+    ContactEditComponent
   ],
   imports: [
     BrowserModule,

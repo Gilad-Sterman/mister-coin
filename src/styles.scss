@@ -21,12 +21,28 @@ button {
     border-radius: .5rem;
     background-color: transparent;
     border: 1px solid rgb(206, 206, 206);
-    margin-bottom: 1rem;
+    margin-block: .5rem;
 
     &:hover {
         cursor: pointer;
         color: rgb(157, 248, 248);
         background-color: rgb(54, 159, 124);
-        
+
+    }
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(25, 85, 65);
+    text-decoration: none;
+    transition: scale 200ms;
+
+    &.active {
+        color: darken($color: rgb(25, 85, 65), $amount: 10%);
+        font-weight: bold;
+    }
+
+    &:hover {
+        scale: 1.05;
     }
 }
