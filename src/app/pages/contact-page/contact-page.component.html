@@ -1,5 +1,9 @@
 <section class="contact-page">
-   <contact-filter></contact-filter>
-   <button routerLink="/edit">New Contact</button>
+   <div class="top-controls">
+      <button title="New Contact" routerLink="/edit">
+         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645561/plus_gaxlmv.png" alt="">
+      </button>
+      <contact-filter></contact-filter>
+   </div>
    <contact-list [contacts]="contacts$ | async"></contact-list>
 </section>

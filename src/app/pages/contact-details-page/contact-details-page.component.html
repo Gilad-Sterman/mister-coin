@@ -1,7 +1,6 @@
 <section *ngIf="contact" class="contact-details">
-    <button (click)="onBack()">
+    <button title="Back" (click)="onBack()">
         <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/back_gtwwvx.png" alt="">
-        Back
     </button>
     <img src="https://robohash.org/{{contact._id}}?set=set5" alt="">
     <h1>{{contact.name}}</h1>
@@ -9,5 +8,7 @@
         <p>Email: <span>{{contact.email}}</span></p>
         <p>Phone: <span>{{contact.phone}}</span></p>
     </div>
-    <a [routerLink]="['/edit', contact._id]">Edit Contact</a>
+    <button class="edit-btn" [routerLink]="['/edit', contact._id]">
+        <img title="Edit Contact" src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/edit_efgtou.png" alt="">
+    </button>
 </section>

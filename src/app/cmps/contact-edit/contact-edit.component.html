@@ -13,10 +13,16 @@
         <label for="phone">Phone Number</label>
         <input [(ngModel)]="contact.phone" type="tel" name="phone" id="phone">
 
-        <button>Save</button>
+        <button class="save-btn">Save</button>
     </form>
-    <button (click)="onBack()">
-        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/back_gtwwvx.png" alt="">
-        Back
-    </button>
+    <div class="control-btns">
+        <button title="Back" (click)="onBack()">
+            <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/back_gtwwvx.png" alt="">
+        </button>
+        <div *ngIf="contact._id">
+            <button title="Delete Contact" (click)="onDeleteContact(contact._id)">
+                <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/delete_ztjgo2.png" alt="">
+            </button>
+        </div>
+    </div>
 </section>

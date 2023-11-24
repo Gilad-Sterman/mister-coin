@@ -17,11 +17,11 @@ p {
 
 button {
     color: rgb(64, 217, 217);
-    padding: .5rem;
-    border-radius: .5rem;
+    padding: .4rem;
     background-color: transparent;
-    border: 1px solid rgb(206, 206, 206);
     margin-block: .5rem;
+    border-radius: 50%;
+    border: none;
 
     &:hover {
         cursor: pointer;
@@ -38,11 +38,10 @@ a {
     transition: scale 200ms;
 
     &.active {
-        color: darken($color: rgb(25, 85, 65), $amount: 10%);
-        font-weight: bold;
+        scale: 1.1;
     }
 
     &:hover {
-        scale: 1.05;
+        scale: 1.1;
     }
 }

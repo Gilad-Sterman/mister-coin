@@ -39,6 +39,15 @@ export class ContactEditComponent implements OnInit, OnDestroy {
       })
   }
 
+  onDeleteContact(contactId: string) {
+    this.contactService.deleteContact(contactId)
+      .pipe(takeUntil(this.destroySubject$))
+      .subscribe({
+        next: this.onBack,
+        error: err => console.log('err:', err)
+      })
+  }
+
   onBack = () => {
     this.router.navigateByUrl('/contact')
   }

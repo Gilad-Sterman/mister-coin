@@ -4,8 +4,20 @@
     flex-direction: column;
     justify-content: center;
 
+    .top-controls {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
     button {
-        width: max-content;
-        margin-top: 1rem;
+        place-self: start;
+        display: flex;
+        align-items: center;
+        // margin-top: 1rem;
+
+        img {
+            width: 26px;
+        }
     }
 }
