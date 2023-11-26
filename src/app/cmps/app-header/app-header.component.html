@@ -6,5 +6,11 @@
         <a routerLink="/contact" routerLinkActive="active">
             <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645561/users_xz03sc.png" alt="">
         </a>
+        <a *ngIf="!loggedInUser.name" routerLink="/signup" routerLinkActive="active">
+            Sign Up
+        </a>
+        <button (click)="onLogOut()" *ngIf="loggedInUser.name">
+            Log Out
+        </button>
     </nav>
 </section>

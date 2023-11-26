@@ -3,6 +3,7 @@ import { Contact } from '../../services/contact.model';
 import { ContactService } from '../../services/contact.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { takeUntil, Subject, map, switchMap } from 'rxjs';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'contact-details-page',
@@ -13,6 +14,7 @@ export class ContactDetailsPageComponent implements OnInit, OnDestroy {
   // @Input() contact!: Contact
 
   private contactService = inject(ContactService)
+  private userService = inject(UserService)
   private router = inject(Router)
   private route = inject(ActivatedRoute)
   destroySubject$ = new Subject<void>()
@@ -35,5 +37,9 @@ export class ContactDetailsPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.destroySubject$.next()
+  }
+
+  onTransfer(amount: number) {
+    this.userService.addMove(this.contact as Contact, amount)
   }
 }

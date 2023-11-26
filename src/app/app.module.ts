@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { ContactEditComponent } from './cmps/contact-edit/contact-edit.component';
+import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactEditComponent } from './cmps/contact-edit/contact-edit.component
     HomePageComponent,
     ContactDetailsPageComponent,
     AppHeaderComponent,
-    ContactEditComponent
+    ContactEditComponent,
+    SignUpPageComponent
   ],
   imports: [
     BrowserModule,

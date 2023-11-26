@@ -3,6 +3,7 @@ import { UserService } from '../../services/user.service';
 import { User } from '../../services/user.model';
 import { Observable } from 'rxjs';
 import { BitcoinService } from '../../services/bitcoin.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'home-page',
@@ -14,14 +15,22 @@ export class HomePageComponent implements OnInit {
   userService = inject(UserService)
   bitcoinService = inject(BitcoinService)
   user!: User
+  subscription!: Subscription
   rate = 0
   // users$!: Observable<User[]>
 
   ngOnInit(): void {
-    this.user = this.userService.getUser()
+    this.userService.loggedInUser$
+      .subscribe(user => {
+        this.user = user
+      })
     this.bitcoinService.getRate()
       .subscribe((res) => {
         this.rate = res
       })
+  }
+
+  ngOnDestroy() {
+    this.subscription?.unsubscribe?.()
   }
 }

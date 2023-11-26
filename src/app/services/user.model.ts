@@ -1,5 +1,7 @@
+import { MoveModel } from "./move.model"
+
 export interface User {
     name: string
     coins: number
-    moves: number[]
+    moves: MoveModel[]
 }
