@@ -1,5 +1,5 @@
 .app-header {
-    background-color: rgb(94, 236, 236);
+    background-color: rgb(30, 129, 129);
     position: sticky;
     // width: 100vw;
     top: 0;
@@ -12,6 +12,16 @@
 
         img {
             width: 32px;
+        }
+    }
+
+    button {
+        border-radius: .5rem;
+        background-color: rgb(24, 36, 32);
+
+        &:hover {
+            color: white;
+            background-color: rgb(40, 82, 68);
         }
     }
 }

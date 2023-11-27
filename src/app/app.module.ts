@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { ContactEditComponent } from './cmps/contact-edit/contact-edit.component';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
+import { MoveListComponent } from './cmps/move-list/move-list.component';
+import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
+import { MovePreviewComponent } from './cmps/move-preview/move-preview.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component
     ContactDetailsPageComponent,
     AppHeaderComponent,
     ContactEditComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    MoveListComponent,
+    TransferFundComponent,
+    MovePreviewComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,7 @@ export class HomePageComponent implements OnInit {
   user!: User
   subscription!: Subscription
   rate = 0
+  title = 'Your Last Moves'
   // users$!: Observable<User[]>
 
   ngOnInit(): void {

@@ -1,18 +1,14 @@
-.sign-up-page {
+.transfer-fund {
     padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(206, 206, 206);
 
     form {
+        color: rgb(64, 217, 217);
         display: flex;
         flex-direction: column;
-        gap: .5rem;
         align-items: center;
-        border: 1px solid rgb(206, 206, 206);
-        padding: 1rem;
-        border-radius: .5rem;
-
-        label {
-            color: rgb(206, 206, 206);
-        }
+        gap: .5rem;
 
         input {
             color: rgb(64, 217, 217);
@@ -22,16 +18,16 @@
             border: none;
             border-radius: 1rem;
             outline: 2px solid rgb(206, 206, 206);
-    
+            width: 100px;
+
             &:focus-visible {
                 outline: 2px solid rgb(255, 255, 255);
             }
         }
-    }
 
-    button {
-        border-radius: 1rem;
-        border: 1px solid rgb(206, 206, 206);
-        padding-inline: 1rem;
+        button {
+            border: 1px solid rgb(206, 206, 206);
+            border-radius: .5rem;
+        }
     }
 }
