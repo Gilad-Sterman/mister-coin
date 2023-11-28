@@ -5,6 +5,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { ContactEditComponent } from './cmps/contact-edit/contact-edit.component';
 import { ContactDetailsPageComponent } from './pages/contact-details-page/contact-details-page.component';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
+import { StatisticPageComponent } from './pages/statistic-page/statistic-page.component';
 
 const routes: Routes = [
   { path: 'contact/:id', component: ContactDetailsPageComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'edit/:id', component: ContactEditComponent },
   { path: 'edit', component: ContactEditComponent },
   { path: 'signup', component: SignUpPageComponent },
+  { path: 'statistic', component: StatisticPageComponent },
   { path: '', component: HomePageComponent }
 ];
 

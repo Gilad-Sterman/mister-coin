@@ -17,6 +17,9 @@ import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component
 import { MoveListComponent } from './cmps/move-list/move-list.component';
 import { TransferFundComponent } from './cmps/transfer-fund/transfer-fund.component';
 import { MovePreviewComponent } from './cmps/move-preview/move-preview.component';
+import { StatisticPageComponent } from './pages/statistic-page/statistic-page.component';
+import { BarChartComponent } from './cmps/bar-chart/bar-chart.component';
+import { PieChrtComponent } from './cmps/pie-chrt/pie-chrt.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { MovePreviewComponent } from './cmps/move-preview/move-preview.component
     SignUpPageComponent,
     MoveListComponent,
     TransferFundComponent,
-    MovePreviewComponent
+    MovePreviewComponent,
+    StatisticPageComponent,
+    BarChartComponent,
+    PieChrtComponent
   ],
   imports: [
     BrowserModule,
