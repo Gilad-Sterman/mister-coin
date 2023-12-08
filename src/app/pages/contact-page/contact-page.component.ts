@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { ContactService } from '../../services/contact.service';
 import { Contact } from '../../services/contact.model';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'contact-page',
@@ -17,4 +18,5 @@ export class ContactPageComponent {
     this.contacts$ = this.contactService.contacts$
 
   }
+
 }

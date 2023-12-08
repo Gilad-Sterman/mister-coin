@@ -1,7 +1,7 @@
 <section class="contact-list">
-    <ul>
-        <li *ngFor="let contact of contacts" [routerLink]="['/contact', contact._id]">
+    <ul cdkDropList (cdkDropListDropped)="drop($event)">
+        <li cdkDrag *ngFor="let contact of myContacts" [routerLink]="['/contact', contact._id]">
             <contact-preview [contact]="contact"></contact-preview>
         </li>
     </ul>
-  </section>
+</section>

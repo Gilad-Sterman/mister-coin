@@ -1,7 +1,9 @@
 <section class="home-page">
-    <h1>Hello {{user.name}}</h1>
-    <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/coins_tfglza.png" alt="">
-    <h3>Coins: {{user.coins}}</h3>
-    <h3>BTC Rate: {{rate}}</h3>
-    <move-list *ngIf="user.moves.length" [moves]="user.moves" [title]="title"></move-list>
+    <div cdkDrag>
+        <h1 cdkDragHandle>Hello {{user.name}}</h1>
+        <img src="https://res.cloudinary.com/dollaguij/image/upload/v1700645562/coins_tfglza.png" alt="">
+        <h3>Coins: {{user.coins}}</h3>
+        <h3>BTC Rate: {{rate}}</h3>
+        <move-list *ngIf="user.moves.length" [moves]="user.moves" [title]="title"></move-list>
+    </div>
 </section>
